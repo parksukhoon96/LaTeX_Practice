@@ -1,0 +1,416 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{color}
+\usepackage{slashbox}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+
+\begin{document}
+
+\title{LaTeX Practice}
+\author{박석훈 / 학생 / 사회학과 }
+\date{March 2022}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{eqnarray}
+f(x) & = & \cos x \\
+f'(x) & = & -\sin x
+\end{eqnarray}
+
+{\setlength\arraycolsep{2pt}
+\begin{eqnarray}
+f(x) & = & \cos x \\
+f'(x) & = & -\sin x
+\end{eqnarray}}
+
+
+$ A \, A \quad A \qquad A $
+
+Cahn--Hilliard
+
+$\boldsymbol{\mu}$
+
+\begin{eqnarray}
+f(x) = \cos x \label{fc}
+\end{eqnarray}
+
+\eqref{fc}
+
+\begin{align}
+    \begin{split}
+        \phi_t&=\Delta \phi, \\
+        \phi_t&=\frac{\phi-\phi^3}{\epsilon^2}.\label{gv_eq}
+    \end{split}
+\end{align}
+
+%$\Big( (x+1) (x-1) \Big) ^{2}$\\
+$\big(\Big(\bigg(\Bigg($\quad $\big\}\Big\}\bigg\}\Bigg\}$
+ \quad $\big\|\Big\|\bigg\|\Bigg\| \quad
+$\big/\Big/\bigg/\Bigg/$ \quad $\big| \Big| \bigg| \Bigg|
+
+\begin{displaymath}
+\mathop{\mathrm{corr}}(X, Y) = \frac{\displaystyle
+\sum_{i=1}^n(x_i-\overline x) (y_i-\overline y)}
+{\displaystyle\left[ \sum_{i=1}^n(x_i-\overline x)^2
+\sum_{i=1}^n(y_i-\overline y)^2 \right]^{1/2}}
+\end{displaymath}
+
+\begin{displaymath}
+\mathop{\mathrm{corr}}(X, Y)= \frac{\displaystyle
+\sum_{i=1}^n(x_i-\overline x) (y_i-\overline y)}
+{\displaystyle\biggl[ \sum_{i=1}^n(x_i-\overline x)^2
+\sum_{i=1}^n(y_i-\overline y)^2 \biggr]^{1/2}}
+\end{displaymath}
+
+$ log(x), \log(x), sin x, \sin x $
+
+$ \langle x, y \rangle$
+
+{\tiny tiny}, \\
+{\scriptsize scriptsize},
+{\footnotesize footnotesize}, {\small small}
+{\normalsize normalsize}, {\large large}, {\Large Large},
+{\LARGE LARGE}, {\huge huge}, {\Huge Huge}
+
+\begin{equation}
+f(x) = \begin{cases}
+            0 & \text{if ~$x=0$,} \\
+            x & \text{otherwise.} 
+      \end{cases}
+\end{equation}
+
+\begin{equation}
+1+(-1)^n=\begin{cases}
+			0, & \text{if $n$ odd}\\
+            2, & \text{otherwise}
+		 \end{cases}
+\end{equation}
+
+
+\begin{equation}
+    \frac{\max_{1 \leq m \leq M} | \phi^n_m|}
+    {\max_{1 \leq m \leq M}|\phi^0_m|} =
+    \frac{\displaystyle\max_{1\leq m \leq M} |\phi^n_m|}
+    {\displaystyle\max_{1 \leq m \leq M}|\phi^0_m|}
+\end{equation}
+
+\verb+eg_pchip.m+ will generate the following figure.
+\verb#eg_pchip.m# will generate the following figure.
+
+\begin{verbatim}
+    10 PRINT "HELLO WORLD";
+    20 GOTO 10
+\end{verbatim}
+
+ADD $a$ and $b$ to get $c$.
+Or, using a more mathematical approach:
+\begin{displaymath}
+c=a+b
+\end{displaymath}
+or you can type less with:
+\[ a+b = c \]
+
+\begin{equation}
+    \epsilon > 0 \label{eq:eps}
+\end{equation}
+From Eq. (\ref{eq:eps}), we can see it is positive.
+
+$ \lim_{x \to 1}(x+1) = 2$
+
+
+
+\begin{displaymath}
+\lim_{x \to 1}(x+1) = 2    
+\end{displaymath}
+
+$ a_1, x^2, e^{-\alpha}$
+
+$\sqrt{x+y}, ~\sqrt[3]{2}$
+
+\begin{displaymath}
+\frac{x^2}{k+1}
+\end{displaymath}
+
+\begin{displaymath}
+1 + \left( \frac{1}{1 - x^2} \right) ^3
+\end{displaymath}
+
+$a^x+y \neq a^{x+y}, e^{x^2} \neq {e^x}^2, a^3_{ij}$,
+x^{\frac{2}{k+1}}
+
+\begin{displaymath}
+x^{2} \geq 0\qquad \textrm{for all }x\in\mathbf{R}
+\end{displaymath}
+
+\begin{displaymath}
+x^{2} \geq 0\qquad \textrm{for all }x\in\mathbb{R}
+\end{displaymath}
+
+\scriptstyle (\verb+\mbox+ \mbox{의 경우})~C_i
+\mbox{ such that } \forall i 
+(\verb+\text+ \mbox{의 경우})~C_i \text{such that } \forall i
+\alpha, \beta, \gamma, \delta, \epsilon, \varepsilon, \zeta, \eta
+
+\theta, \vartheta, \kappa, \lambda, \mu, \nu, \xi, \pi, \rho
+
+\sigma, \tau, \phi, \varphi, \chi, \psi, \omega
+
+\le, \ll, \subset, \subseteq, \in, \ge, \gg, \supset, \subseteq
+
+\ni, \|, \equiv, \doteq, \sim, \simeq, \approx, \cong
+
+\propto, \perp, \ne, \pm, \cdot, \times, \cup, \oplus, \otimes
+
+\bigtriangleup, \lhd, \mp, \div, \setminus, \cap, \bigcirc
+
+\bigtriangledown, \rhd, \triangleleft, \triangleright, \star
+
+\Box, \ast, \circ, \bullet, \diamond, \dagger, \ddagger, \dots, \cdots
+
+\sum, \prod, \int, \oint, \bigcup, \bigcap, \vdots, \ddots
+
+\nabla, \partial, \infty, \prime, \exists, \forall
+
+\because, \therefore
+
+\$, \&, \%, \#, \_, \{, \}, \backslash
+
+It is $35\, ^{\circ}\mathrm{C}$.
+y = x^2, y'=2x, y''=2
+
+\begin{displaymath}
+\vec a\quad\overrightarrow{AB}
+\end{displaymath}
+
+$ \underbrace{ a+b+\cdots+z }_{26} $
+
+\begin{displaymath}
+\lim_x{x \rightarrow 0}, \sum_{i=1}^{n},
+\int_{0}^{\frac{\pi}{2}}, \prod_\epsilon
+\end{displaymath}
+
+\begin{displaymath}
+\sum_{\substack{0<i<n \\ 1<j<n}}
+P(i, j) = \sum_{\begin{subarray}{1} i\in I \\ i<j<m
+\end{subarray}} Q(i, j)
+\end{displaymath}
+
+\begin{displaymath}
+{a, b, c}\neq\{a, b, c\}
+\end{displaymath}
+
+% a \bmod b, x \equiv a \pmod{b} 
+
+\begin{displaymath}
+\binom{n}{k} \qquad \mathrm{C}_n^k \qquad _n\mathrm{C}_r
+\end{displaymath}
+
+\begin{displaymath}
+\int f_N(x) \stackrel{!}{=} 1
+\end{displaymath}
+
+\newcommand{\ud}{\mathrm{d}
+\begin{displaymath}
+\int\!\!\!\int_{D} g(x, y) \, \ud x\, \ud y
+\end{displaymath}
+instead of
+\begin{displaymath}
+\int\int_{D} g(x, y)\ud x \ud y
+\end{displaymath}
+
+\newcommand{\ud}{\mathrm{d}}
+\begin{displaymath}
+\iint_{D} \, \ud x \, \ud y
+\end{displaymath}
+
+${\displaystyle \int f^{-1}(x-x_a)\, dx},
+{\textstyle \int f^{-1}(x-x_a)\, dt},
+{\scriptstyle \int f^{-1}(x-x_a)\,dx},
+{\scriptscriptstyle \int f^{-1}(x-x_a)\,dx}$
+
+\begin{displaymath}
+{}^{12}_{\phantom{1}6}\textrm{C}, {}^{12}_{6}\textrm{C}
+\end{displaymath}
+
+\begin{displaymath}
+\Gamma_{ij}^{\phantom{ij}k}, \Gamma_{ij}^{k}
+\end{displaymath}
+
+\begin{displaymath}
+\mathbf{X} = \left( \begin{array}ccc
+    x_{11} & x_{12} & \ldots \\
+    x_{21} & x_{22} & \ldots \\
+    \vdots & \vdots & \ddots
+\end{array} \right)
+\end{displaymath}
+
+\begin{eqnarray}
+\sin x & = & x -\frac{x^3}{3!} + \frac{x^5}{5!} \nonumber \\
+& & -\frac{x^7}{7!}+\cdots
+\end{eqnarray}
+
+http://math.korea.ac.kr/$\sim$cfdkim/
+
+\label{marker}, \ref{marker}, \pageref{marker}
+
+A reference to this subsection \label{sec:this} looks like:
+``see section \ref{sec:this} on page \pageref{sec:this}.''
+
+\footnote{footnote text}
+
+Footnotes\footnote{This is a footnote.} are often used by people using \LaTeX.
+
+\emph{If you use emphasizing inside a piece of emphasized text, then \LaTeX{} uses the \emph{normal} font for emphasizing.}
+
+\textit{You can also \emph{emphasize} text if it is set in italics,}
+
+{\color{blue} The text is blue.}
+
+
+\flushleft
+\begin{enumerate}
+    \item You can mix the list environments to your taste:
+\begin{itemize}
+    \item But it might start to look silly.
+    \item[-] With a dash.}    
+\end{itemize}
+\item Therefore remember:
+\begin{description}
+\item[Stupid] things will not become smart because they are in a list.
+\item[Smart] things, though, can be presented beautifully in a list.
+\end{description}
+\end{enumerate}
+
+\tableofcontents
+
+\chapter{...}
+\section{...}
+\subsection{...}
+\subsubsection{...}
+
+\maketitle
+
+\title{...}
+\author{...}
+\date{...}
+
+\newcommand{\be}{\begin{eqnarray*}}
+\newcommand{\end}{\end{eqnarray*}}
+
+\be f(x) = \begin{cases}
+0 & \text{if ~$x=0$,} \\
+x & \text{otherwise.}
+\end{cases}
+
+
+\begin{table}[h]
+\caption{Comparison of $1_2$ error and (CPU time).}
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Mesh & Bi-CGStab & OSM \\
+    \hline
+    $32 \times 32$  & 0.0161~~(0.33)~ & 0.0160~(0.31) \\
+    $64 \times 64$  & 0.0126~~(1.67)~ & 0.0126~(1.17) \\
+    $128 \times 128$  & 0.0078~~(6.42)~ & 0.0076~(4.67) \\
+    $256 \times 256$  & 0.0089~~(90.50)~ & 0.0087~(19.34) \\
+    \hline
+    \end{tabular}
+\end{center} \label{tab1}
+\end{table}
+
+\begin{table}[h]
+\caption{Comparison of $1_2$ error and (CPU time).}
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \backslashbox{Mesh}{Method} & Bi-CGStab & OSM \\
+    \hline
+    $32 \times 32$  & 0.0161~~(0.33)~ & 0.0160~(0.31) \\
+    $64 \times 64$  & 0.0126~~(1.67)~ & 0.0126~(1.17) \\
+    $128 \times 128$  & 0.0078~~(6.42)~ & 0.0076~(4.67) \\
+    $256 \times 256$  & 0.0089~~(90.50)~ & 0.0087~(19.34) \\
+    \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\caption{Option price}
+\begin{center}
+    \begin{tabular}{|c|*{4}{c|}c|}
+    \hline Underlying assets & \multicolumn{4}{|c|}{Option Price(OSM)} & Option price(Exact) \\
+    \cline{2-5}
+    $(x, \ y)$ & $h=2$ & $h=1$ & $h=0.5$ & $h=0.25$ \\
+    \hline
+    (90, 90) & 1.5391 & 1.5325 & 1.5287 & 1.5267 & 1.5475 \\
+    \hline
+    (100, 100) & 3.1319 & 3.1403 & 3.1442 & 3.1461 & 3.1935 \\
+    \hline
+    (110, 110) & 4.9759 & 4.9963 & 5.0064 & 5.0115 & 5.0889 \\
+    \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+    \caption{Relative errors} \label{tab_h}
+    \begin{tabular}{|c|*{6}{c|}c|}
+    \hline& \multicolumn{3}{c|}{$\Gamma_{xx}$} & \multicolumn{3}{c|}{$\Gamma_{xy}$} \\
+    \cline{2-7}
+    $h$ & 2nd order & 4th order & 6th order & 2nd order & 4th order & 6th order \\
+    \hline 1.000000 & 2.067e-3 & 1.355e-3 & 1.354e-3 & 1.628e-3 & 7.011e-4 & 6.985e-4 \\
+    \hline 0.500000 & 5.172e-4 & 3.387e-4 & 3.387e-4 & 4.075e-4 & 1.748e-4 & 1.747e-4 \\
+    \hline 0.250000 & 1.293e-4 & 8.467e-5 & 8.466e-5 & 1.019e-4 & 4.368e-5 & 4.367e-5 \\
+    \hline 0.125000 & 3.233e-5 & 2.117e-5 & 2.117e-5 & 2.548e-5 & 1.092e-5 & 1.092e-5 \\
+    \hline 0.062500 & 8.014e-6 & 5.212e-6 & 5.209e-6 & 6.345e-6 & 2.698e-6 & 2.694e-6 \\
+    \hline 0.031250 & 2.021e-6 & 1.283e-6 & 1.258e-6 & 1.676e-6 & 7.938e-7 & 8.082e-7 \\
+    \hline 0.015625 & 1.312e-7 & 1.066e-7 & 1.232e-7 & 2.696e-7 & 9.799e-10 & 1.646e-8 \\
+    \hline    
+    \end{tabular}
+    \label{tab:my_label}
+\end{center}    
+\end{table}
+
+
+
+\begin{table}[htbp]
+\caption{Relative errors}
+\begin{center}
+\begin{tabular}{cc|ccccccc}
+\toprule
+    &\backslashbox{error}{$h$} & $1$ & 0.5 & 0.25 & 0.125 & 0.0625 & 0.03125 \\
+\midrule
+\multirow{3}{\newlength\LL\settowidth\LL{10}}{$\Gamma_{xx}$}
+         & 2nd order & 2.067e-3 & 5.172e-4 & 1.293e-4 & 3.233e-5 & 8.083e-6 & 2.021e-6\\
+         & 4th order & 1.355e-3 & 3.387e-4 & 8.468e-5 & 2.117e-5 & 5.292e-6 & 1.323e-6\\
+         & 6th order & 1.354e-3 & 3.387e-4 & 8.467e-5 & 2.117e-5 & 5.292e-6 & 1.323e-6\\
+    \midrule
+    \multirow{3}[\newlength\LL\settowidth\LL{10}]{$\Gamma_{xy}$}
+         & 2nd order & 1.628e-3 & 4.075e-4 & 1.019e-4 & 2.548e-5 & 6.369e-6 & 1.592e-6\\
+         & 4th order & 7.011e-4 & 1.748e-4 & 4.368e-5 & 1.092e-5 & 2.730e-6 & 6.823e-7\\
+         & 6th order & 6.985e-4 & 1.747e-4 & 4.367e-5 & 1.092e-5 & 2.730e-6 & 6.823e-7\\
+    \bottomrule         
+    \end{tabular}
+    \end{center}
+\end{table}
+
+\multirow{3}{\newlength\LL\settowidth\LL{10}}{$\Gamma_{xy}$}
+
+
+\end{document}
+
+
